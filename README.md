@@ -14,7 +14,7 @@ Herramienta profesional en Python para corregir, humanizar y auditar textos gene
 
 ## Uso rápido
 ```bash
-python ai_text_fixer_pro.py --in texto.txt --out texto_ok.txt --profile linkedin --ai-check --report
+python AiFixerTextPro.py --in texto.txt --out texto_ok.txt --profile linkedin --ai-check --report
 
 Requisitos
 Python 3.9+
@@ -36,29 +36,29 @@ pip install language-tool-python
 
 Corrige y humaniza un texto manteniendo el significado original:
 
-python ai_text_fixer_pro.py --in texto.txt --out texto_corregido.txt
+python AiFixerTextPro.py --in texto.txt --out texto_corregido.txt
 
 3️⃣ Perfiles de estilo
 
 Elige el perfil según el contexto del texto:
 
 👨‍🏫 Docente (claro y pedagógico)
-python ai_text_fixer_pro.py --in texto.txt --out salida.txt --profile docente
+python AiFixerTextPro.py --in texto.txt --out salida.txt --profile docente
 
 💼 LinkedIn (más humano, dinámico y legible)
-python ai_text_fixer_pro.py --in post.txt --out post_ok.txt --profile linkedin
+python AiFixerTextPro.py --in post.txt --out post_ok.txt --profile linkedin
 
 🛠️ Helpdesk (formato ticket y pasos claros)
-python ai_text_fixer_pro.py --in respuesta.txt --out respuesta_ok.txt --profile helpdesk
+python AiFixerTextPro.py --in respuesta.txt --out respuesta_ok.txt --profile helpdesk
 
 ⚪ Neutro (solo limpieza técnica)
-python ai_text_fixer_pro.py --in texto.txt --out salida.txt --profile neutro
+python AiFixerTextPro.py --in texto.txt --out salida.txt --profile neutro
 
 4️⃣ IA Check Control (recomendado)
 
 Evalúa cuánto “huele a IA” el texto final:
 
-python ai_text_fixer_pro.py --in texto.txt --out salida.txt --ai-check --report
+python AiFixerTextPro.py --in texto.txt --out salida.txt --ai-check --report
 
 
 Incluye:
@@ -73,10 +73,10 @@ Métricas de frases, repetición y conectores
 
 Con LanguageTool:
 
-python ai_text_fixer_pro.py --in texto.txt --out salida.txt --languagetool es --report
+python AiFixerTextPro.py --in texto.txt --out salida.txt --languagetool es --report
 
 6️⃣ Uso desde stdin (clipboard / pipes)
-cat texto.txt | python ai_text_fixer_pro.py --stdin --profile linkedin --ai-check > salida.txt
+cat texto.txt | python AiFixerTextPro.py --stdin --profile linkedin --ai-check > salida.txt
 
 7️⃣ Opciones útiles
 Opción	Descripción
